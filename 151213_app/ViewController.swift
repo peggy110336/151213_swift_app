@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func showHelloWorld(sender: UIButton) {
+        labelHello.text = "Hello World!"
+    }
+    
+    @IBOutlet weak var labelHello: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
